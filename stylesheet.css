@@ -421,9 +421,15 @@ a {
     color: white;
 }
 
+.hire-us .left > :nth-child(2) {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
 .hire-us .left hr {
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 100px;
 }
 
 .hire-us .left .quote {
@@ -451,7 +457,7 @@ a {
 .left img {
     border-radius: 50px;
     height: 32px;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .head-pics .large-img {
@@ -460,7 +466,7 @@ a {
 
 .hire-us .right {
     background-color: white;
-    max-width: 500px;
+    max-width: 430px;
     border-radius: 5px;
     padding-top: 10px;
     padding-left: 20px;
@@ -468,34 +474,55 @@ a {
     padding-right: 20px;
 }
 
-
+.hire-us .right > :first-child {
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
 
 .form-inputs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 15px;
 }
 
 textarea {
     grid-column: 1 / span 2;
+    font-family: sans-serif;
+    color: rgb(167, 167, 167);
+    max-width: 378px;
+    padding: 10px 10px;
+    border: 1px solid #dddcdc;
 }
 
 input {
     width: 175px;
     height: 35px;
+    border: 1px solid #dddcdc;
+    border-radius: 4px;
 }
 select {
     width: 175px;
     height: 35px;
+    font-weight: bold;
+    border: 1px solid #dddcdc;
+    border-radius: 4px;
 }
 
 .checkbox-line {
     display: flex;
 }
 
+.checkbox-line p {
+    font-size: 13px;
+    text-align: left;
+    margin-top: 16px;
+
+}
+
 #checkbox {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
     margin-top: 12px;
     margin-left: auto;
     margin-right: 10px;
@@ -504,11 +531,34 @@ select {
 .form-link {
     display: flex;
     justify-content: space-evenly;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.hire-us, button {
-    text-align: center;
+.form-link a {
+    text-decoration: none;
+    color: gray;
 }
+
+.form-link > :nth-child(2) {
+    color:  rgb(1, 116, 248);
+}
+
+.hire-us  .get-started-btn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 130px;
+    border: 1px solid transparent;
+    background-color: rgb(1, 116, 248);
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 12px 25px;
+}
+    
+
 
 /* Ipads and Tablest - Portrait */
 @media screen and (max-width: 768px) {

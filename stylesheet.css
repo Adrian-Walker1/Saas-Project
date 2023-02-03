@@ -636,6 +636,47 @@ select {
   font-size: 13px;
 }
 
+footer {
+  margin: 30px auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+
+}
+
+.footer-right {
+  display: flex;
+}
+
+#social {
+  border: 1px transparent;
+  background-color: rgb(235, 242, 243);
+  border-radius: 5px;
+  font-size: 11px;
+  padding: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Ipads and Tablest - Portrait */
@@ -680,7 +721,8 @@ select {
   .trusted,
   .pricing,
   .hire-us-wrapper,
-  .references {
+  .references,
+  footer {
     max-width: 1140px;
   }
 }

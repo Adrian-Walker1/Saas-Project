@@ -556,6 +556,88 @@ select {
   padding: 12px 25px;
 }
 
+.references {
+  display: flex;
+  margin: 40px auto;
+  justify-content: space-between;
+}
+
+#ref-card {
+  width: calc(20% - 50px);
+  margin: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.contact-info img {
+  max-width: 90px;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+}
+
+.address, .phone, .help, .account {
+  display: flex;
+}
+
+.address span, .phone span, .help span, .account span {
+  color: gray;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+
+.phone a {
+  color: rgb(1, 116, 248);
+}
+
+.career {
+  display: flex;
+}
+
+.career button {
+  border: 1px solid transparent;
+  background-color: rgb(1, 116, 248);
+  color: white;
+  font-size: 8.5px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+#ref-card.features > :nth-child(3) {
+  color: rgb(1, 116, 248);
+}
+
+
+#ref-card {
+  display: flex;
+  flex-direction: column;
+}
+
+#ref-card h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#ref-card a{
+  line-height: 1.8;
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+}
+
+
+
 /* Ipads and Tablest - Portrait */
 @media screen and (max-width: 768px) {
   [aria-controls="navbarDropdown"] {
@@ -597,7 +679,8 @@ select {
   .hubspot,
   .trusted,
   .pricing,
-  .hire-us-wrapper {
+  .hire-us-wrapper,
+  .references {
     max-width: 1140px;
   }
 }

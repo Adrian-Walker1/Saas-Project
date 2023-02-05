@@ -225,8 +225,27 @@ a {
   gap: 35px;
 }
 
+.benefits-grid a {
+  text-decoration: none;
+  color: rgb(1, 116, 248);
+}
+
 .benefits-grid .card img {
   width: 50px;
+}
+
+.premium-header {
+  display: flex;
+}
+
+.premium-header button {
+  background-color: green;
+  border: 1px solid transparent;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 15px;
 }
 
 .card {
@@ -646,7 +665,16 @@ footer {
 }
 
 .footer-left {
+  display: flex;
+}
 
+.footer-left a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer-left :nth-child(2) {
+  color: rgb(1, 116, 248);
 }
 
 .footer-right {
@@ -658,26 +686,13 @@ footer {
   background-color: rgb(235, 242, 243);
   border-radius: 5px;
   font-size: 11px;
-  padding: 7px;
+  padding: 12px;
+  margin-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer p {
+  text-align: center;
+}
 
 /* Ipads and Tablest - Portrait */
 @media screen and (max-width: 768px) {

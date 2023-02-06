@@ -236,16 +236,20 @@ a {
 
 .premium-header {
   display: flex;
+  align-items: center;
 }
 
-.premium-header button {
-  background-color: green;
+ .sketch-btn {
+  background-color: rgb(68, 206, 160);
   border: 1px solid transparent;
   color: white;
   font-size: 12px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-left: 15px;
+  height: 24px;
+  width: 60px;
+  padding: 4px 10px;
 }
 
 .card {
@@ -280,10 +284,6 @@ p {
   margin: auto 20px;
 }
 
-.why-front .hero-header {
-  text-align: center;
-}
-
 .dot-main-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -308,9 +308,19 @@ p {
   margin: auto;
 }
 
-.why-front {
-  margin: 10px auto;
+.why-front .hero-header {
+  text-align: center;
+  margin-bottom: 50px;
 }
+
+.why-front .hero-header p {
+  color: gray;
+}
+
+.why-front {
+  margin: 80px auto;
+}
+
 .why-front .dot {
   display: flex;
   justify-content: center;
@@ -365,11 +375,13 @@ p {
 }
 
 .trusted {
-  margin: auto;
+  margin: 60px auto;
 }
 
-.trusted h2 {
+.trusted h3 {
   text-align: center;
+  margin-bottom: 50px;
+  color: gray;
 }
 
 .trusted-companies {
@@ -382,7 +394,11 @@ p {
 
 .pricing {
   text-align: center;
-  margin: auto;
+  margin:80px auto;
+}
+
+.pricing p {
+  color: gray;
 }
 
 .pricing-table {
@@ -390,7 +406,9 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   text-align: left;
-  gap: 40px;
+  gap: 45px;
+  margin-top: 80px;
+  padding: 10px 10px;
 }
 
 .pricing-table p {
@@ -402,11 +420,11 @@ p {
   grid-row: 1 / span 2;
   font-size: 35px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  padding: 15px;
+  padding: 30px 30px;
 }
 
 .main-price p {
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .main-price button {
@@ -415,6 +433,11 @@ p {
 
 .pricing-table img {
   height: 60px;
+}
+
+.cancel-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .hire-us {
@@ -666,6 +689,11 @@ footer {
 
 .footer-left {
   display: flex;
+  font-size: 13px;
+}
+
+.footer-left a {
+  margin-left: 10px;
 }
 
 .footer-left a {

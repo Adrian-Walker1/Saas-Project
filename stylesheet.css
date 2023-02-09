@@ -15,8 +15,8 @@ body {
   background: rgb(249, 249, 249);
   background: linear-gradient(
     112deg,
-    rgba(249, 249, 249, 1) 35%,
-    rgba(236, 236, 236, 1) 69%,
+    rgb(248, 248, 248) 35%,
+    rgb(247, 249, 250) 69%,
     rgba(219, 232, 242, 1) 69%
   );
 }
@@ -87,7 +87,9 @@ a {
 .navbar-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 
 .nav-bar .nav-container {
   display: flex;
@@ -101,14 +103,24 @@ a {
 }
 
 .nav-link a {
-  color: #666;
-  font-size: 0.99rem;
+  color: gray;
+  font-size: 15px;
   font-weight: 600;
   font-family: "Hind", sans-serif;
-  margin-right: 40px;
+  margin-right: 20px;
   line-height: 20px;
 }
 
+#features.nav-link a{
+  color: rgb(1, 116, 248);
+}
+
+.empower-wrapper .container a {
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(1, 116, 248);
+}
 .nav-link .buy-btn,
 .play-btn {
   border: 1px solid transparent;
@@ -118,7 +130,7 @@ a {
   font-family: sans-serif;
   font-weight: 600;
   border-radius: 30px;
-  padding: 15px 30px;
+  padding: 15px 25px;
 }
 
 .play-btn {
@@ -135,7 +147,7 @@ a {
 }
 
 .container h1 {
-  font-size: 50px;
+  font-size: 45px;
   margin: auto;
 }
 
@@ -143,68 +155,76 @@ a {
   color: #666;
 }
 
+.logo-container img {
+  box-shadow: 
+  0 4px 15px rgb(0 0 0 / 30%);
+}
+
 .google-logo {
   background-color: white;
   border-radius: 50%;
-  height: 75px;
-  position: inherit;
-  top: 15%;
-  left: 50%;
-  padding: 12px;
+  height: 58px;
+  padding: 9px;
+  position: relative;
+  top: -60px;
+  left: 115px;
+
 }
 .atlassian {
   background-color: white;
   border-radius: 50%;
   height: 75px;
-  /* position: absolute; */
-  top: 15%;
-  left: 60%;
+  position: relative;
+  top: -15%;
+  left: 32%;
   padding: 12px;
 }
 .asana {
   background-color: white;
-  border-radius: 50%;
-  height: 75px;
-  /* position: absolute; */
-  top: 15%;
-  left: 70%;
-  padding: 12px;
+    border-radius: 50%;
+    height: 75px;
+    position: relative;
+    top: -15%;
+    left: 54%;
+    padding: 14px;
 }
+
 .pay-pal {
   background-color: white;
   border-radius: 50%;
   height: 75px;
-  /* position: absolute; */
-  top: 30%;
-  left: 50%;
+  position: relative;
+  top: 50%;
+  left: -24%;
   padding: 12px;
 }
+
 .google-a {
   background-color: white;
   border-radius: 50%;
-  height: 75px;
-  /* position: absolute; */
-  top: 30%;
-  left: 60%;
-  padding: 12px;
+  height: 50px;
+  position: relative;
+  top: 90%;
+  left: -23%;
+  padding: 8px;
 }
 .weave {
   background-color: white;
   border-radius: 50%;
   height: 75px;
-  /* position: absolute; */
-  top: 30%;
-  left: 70%;
+  position: relative;
+  top: 50%;
+  left: -11%;
   padding: 12px;
 }
 .calendar {
   background-color: white;
   border-radius: 50%;
-  height: 75px;
-  /* position: absolute; */
-  top: 30%;
-  left: 80%;
-  padding: 12px;
+  height: 68px;
+  position: relative;
+  top: 104%;
+  left: -7%;
+  padding: 11px;
 }
 
 .benefits {
@@ -253,7 +273,9 @@ a {
 }
 
 .card {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+  0 2px 4px rgba(0, 0, 0, 0.1), 
+  0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
@@ -271,7 +293,7 @@ p {
 .software-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(227, 233, 240);
+  background-color: rgb(246, 247, 248);
   margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -352,22 +374,44 @@ p {
 
 .hub-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
-.hub-left {
+/* .hub-left {
   display: flex;
-}
+} */
 
 .hub-left #dots {
-  height: 440px;
+  height: 350px;
 }
 
 #woman {
-  height: 450px;
+  height: 380px;
+  position: relative;
+  bottom: 10%;
+  right: 30%;
+}
+
+.hub-right {
+  display: flex;
+  align-items: center;
 }
 
 .hub-content {
   text-align: left;
+}
+
+.hub-content p {
+  font-size: 25px;
+}
+
+.hub-content h4 {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.hub-content h6 {
+  margin-top: 5px;
 }
 
 .hub-content img {

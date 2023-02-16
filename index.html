@@ -115,8 +115,7 @@
 
       <div class="container">
         <h1>
-          Font makes you look at things <br>
-          from a different prospectives
+          Font makes you look at things from a different prospective
         </h1>
         <button class="play-btn">
           <i class="fa fa-play-circle"></i> Play Video
@@ -142,10 +141,11 @@
           <div class="dot">
             <div class="center-dot"></div>
           </div>
-          <div class="line"></div>
         </div>
         <div class="dot-text">Basic elements</div>
       </div>
+
+      <!-- <div class="line"></div> -->
 
       <div class="dot-wrapper">
         <div class="dot">
@@ -208,7 +208,10 @@
     <p>No additional costs. Pay for what you use.</p>
     <div class="pricing-table">
       <div class="main-price">
-        <h1>59 /mo</h1>
+        <div class="main-header">
+          <h1>59</h1>
+          <h5>/ mo</h5>
+        </div>
         <hr>
         <p>Start your Front bsuiness now. 100% <br> guaranteed money back. No <br> questions asked.</p>
         <button class="play-btn">
@@ -398,6 +401,16 @@
 
 
   <script>
+    const nav= document.getElementById("topNav");
+    window.onscroll = function ()  {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+
+
     const navButton = document.querySelector("button[aria-expanded]");
 
     function toggleNav({ target }) {

@@ -12,13 +12,18 @@ body {
 
 .bg-container {
   height: 700px;
-  background: rgb(249, 249, 249);
   background: linear-gradient(
-    112deg,
+    106deg,
     rgb(248, 248, 248) 35%,
-    rgb(247, 249, 250) 69%,
-    rgba(219, 232, 242, 1) 69%
+    rgb(247, 249, 250) 65.5%,
+    rgba(219, 232, 242, 1) 65.5%
   );
+  clip-path: polygon(0 91%, 0 0, 100% 0, 100% 63%);
+  
+}
+
+.empower-wrapper .container {
+  z-index: 1;
 }
 
 ul {
@@ -740,7 +745,7 @@ select {
 }
 
 footer {
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .footer-nav {
@@ -770,17 +775,35 @@ footer {
   display: flex;
 }
 
+.footer-right a {
+  text-decoration: none;
+  color: rgb(94, 93, 93);
+}
+
 #social {
   border: 1px transparent;
   background-color: rgb(235, 242, 243);
   border-radius: 5px;
-  font-size: 11px;
-  padding: 12px;
-  margin-left: 10px;
+  font-size: 16px;
+  padding: 8px;
+  margin-left: 15px;
+}
+
+.footer-right #social.google {
+  background-color: rgb(94, 93, 93);
+  color: rgb(235, 242, 243);
+}
+
+.footer-right #social.country {
+  ;
 }
 
 footer p {
   text-align: center;
+  margin-top: 0;
+}
+.footer-bottom {
+  margin-top: 50px;
 }
 
 /* Ipads and Tablest - Portrait */

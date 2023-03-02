@@ -10,6 +10,25 @@ body {
   font-family: sans-serif;
 }
 
+.nav-container,
+.empower-wrapper,
+.benefits-grid,
+.software-wrapper,
+.why-front,
+.video-banner,
+.hubspot,
+.trusted-companies,
+.pricing-table,
+.hire-us-wrapper,
+.left-wrapper,
+.right,
+.reference-wrapper,
+.footer-nav,
+.footer-bottom {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .bg-container {
   height: 700px;
   background: linear-gradient(
@@ -19,7 +38,6 @@ body {
     rgba(219, 232, 242, 1) 65.5%
   );
   clip-path: polygon(0 91%, 0 0, 100% 0, 100% 63%);
-  
 }
 
 .empower-wrapper .container {
@@ -70,18 +88,19 @@ a {
 .navbar-toggler {
   display: block;
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 50px;
+  top: 25px;
   outline: none;
   background-color: transparent;
   border: 1px solid transparent;
 }
 
 .navbar-toggler span {
-  color: var#666;
-  font-size: 20px;
+  color: gray;
+  font-size: 23px;
   cursor: pointer;
   pointer-events: none;
+  font-weight: bold;
 }
 
 [aria-controls="navbarDropdown"] {
@@ -93,7 +112,6 @@ a {
   align-items: center;
   justify-content: center;
 }
-
 
 .nav-bar .nav-container {
   display: flex;
@@ -115,7 +133,7 @@ a {
   line-height: 20px;
 }
 
-#features.nav-link a{
+#features.nav-link a {
   color: rgb(1, 116, 248);
 }
 
@@ -160,8 +178,7 @@ a {
 }
 
 .logo-container img {
-  box-shadow: 
-  0 4px 15px rgb(0 0 0 / 30%);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
 }
 
 .google-logo {
@@ -172,7 +189,6 @@ a {
   position: relative;
   top: -60px;
   left: 115px;
-
 }
 .atlassian {
   background-color: white;
@@ -185,12 +201,12 @@ a {
 }
 .asana {
   background-color: white;
-    border-radius: 50%;
-    height: 75px;
-    position: relative;
-    top: -15%;
-    left: 54%;
-    padding: 14px;
+  border-radius: 50%;
+  height: 75px;
+  position: relative;
+  top: -15%;
+  left: 54%;
+  padding: 14px;
 }
 
 .pay-pal {
@@ -236,6 +252,14 @@ a {
   padding-bottom: 55px;
 }
 
+.benefits h2 {
+  font-size: 27px;
+}
+
+.benefits p {
+  color: gray;
+}
+
 .benefits-container {
   margin-top: 250px;
   margin-bottom: 100px;
@@ -263,7 +287,7 @@ a {
   align-items: center;
 }
 
- .sketch-btn {
+.sketch-btn {
   background-color: rgb(68, 206, 160);
   border: 1px solid transparent;
   color: white;
@@ -277,9 +301,7 @@ a {
 }
 
 .card {
-  box-shadow: 
-  0 2px 4px rgba(0, 0, 0, 0.1), 
-  0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
@@ -304,7 +326,7 @@ p {
 }
 
 .software-wrapper .container h1 {
-  font-size: 23px;
+  font-size: 24px;
 }
 .software-wrapper .container {
   margin: auto 20px;
@@ -325,7 +347,7 @@ p {
 }
 
 .dot-wrapper + .dot-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 37%;
   left: 17%;
@@ -379,28 +401,57 @@ p {
   margin: 100px auto;
 }
 
+.banner-section {
+  position: relative;
+}
+
+.video-banner {
+  position: relative;
+}
+
+.banner-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px transparent;
+  height: 75px;
+  width: 75px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.banner-button span {
+  
+  font-size: 37px;
+  margin: 20px 
+}
+
 .hubspot {
   margin: auto;
 }
 
 .hub-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 0 25px;
 }
 
-/* .hub-left {
+.hub-left {
   display: flex;
-} */
+}
 
 .hub-left #dots {
-  height: 350px;
+  height: 400px;
 }
 
-#woman {
-  height: 380px;
+.hub-left #woman {
+  height: 400px;
   position: relative;
-  bottom: 10%;
-  right: 30%;
+  bottom: 14%;
+  right: 28%;
 }
 
 .hub-right {
@@ -413,7 +464,7 @@ p {
 }
 
 .hub-content p {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .hub-content h4 {
@@ -426,7 +477,7 @@ p {
 }
 
 .hub-content img {
-  height: 45px;
+  height: 35px;
 }
 
 .trusted {
@@ -480,7 +531,7 @@ p {
 
 .main-header {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   margin-bottom: -20px;
 }
 
@@ -665,13 +716,17 @@ select {
 }
 
 .references {
-  display: flex;
   margin: 40px auto;
+}
+
+.reference-wrapper {
+  display: flex;
+  /* margin: 40px auto; */
   justify-content: space-between;
 }
 
 #ref-card {
-  width: calc(20% - 50px);
+  /* width: calc(20% - 50px); */
   margin: 5px;
 }
 
@@ -693,11 +748,17 @@ select {
   font-size: 12px;
 }
 
-.address, .phone, .help, .account {
+.address,
+.phone,
+.help,
+.account {
   display: flex;
 }
 
-.address span, .phone span, .help span, .account span {
+.address span,
+.phone span,
+.help span,
+.account span {
   color: gray;
   font-size: 13px;
   margin-top: 4px;
@@ -726,7 +787,6 @@ select {
   color: rgb(1, 116, 248);
 }
 
-
 #ref-card {
   display: flex;
   flex-direction: column;
@@ -737,7 +797,7 @@ select {
   font-size: 16px;
 }
 
-#ref-card a{
+#ref-card a {
   line-height: 1.8;
   text-decoration: none;
   color: gray;
@@ -751,6 +811,7 @@ footer {
 .footer-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-left {
@@ -795,7 +856,6 @@ footer {
 }
 
 .footer-right #social.country {
-  ;
 }
 
 footer p {
@@ -804,38 +864,10 @@ footer p {
 }
 .footer-bottom {
   margin-top: 50px;
+  color: gray;
 }
 
-/* Ipads and Tablest - Portrait */
-@media screen and (max-width: 768px) {
-  [aria-controls="navbarDropdown"] {
-    display: block;
-  }
-
-  [aria-expanded="false"] ~ ul {
-    display: none;
-  }
-
-  [aria-expanded="true"] ~ ul {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    background-image: linear-gradient(
-      to right,
-      transparent,
-      rgba(255, 255, 255, 0.7)
-    );
-    width: 100%;
-    text-align: right;
-    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
-  }
-
-  [aria-expanded="true"] ~ ul li a {
-    margin-right: 20px;
-    color: #666;
-  }
-}
+/* Desktop View */
 
 @media (min-width: 1200px) {
   .nav-container,
@@ -853,3 +885,362 @@ footer p {
     max-width: 1140px;
   }
 }
+
+/* Ipads and Tablest - Portrait */
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 72px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.7)
+    );
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: 20px;
+    color: #666;
+  }
+
+  .nav-container,
+  .empower-wrapper,
+  .benefits-container,
+  .software-wrapper,
+  .why-front,
+  .video-banner,
+  .hubspot,
+  .trusted,
+  .pricing,
+  .hire-us-wrapper,
+  .references,
+  footer {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  body br {
+    display: none;
+  }
+
+  .bg-container {
+    clip-path: polygon(0 78%, 0 0, 100% 0, 100% 58%);
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+    width: 25%;
+    transition: ease-in-out 0.03s;
+  }
+
+  .empower-wrapper {
+    display: flex;
+    margin-top: -575px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .google-logo {
+    top: 78px;
+    left: 9px;
+  }
+
+  .atlassian {
+    top: 84px;
+    left: 124px;
+  }
+
+  .asana {
+    top: 76px;
+    left: 303px;
+  }
+
+  .pay-pal {
+    top: 197px;
+    left: -194px;
+  }
+
+  .google-a {
+    top: 278px;
+    left: -154px;
+  }
+
+  .weave {
+    top: 197px;
+  }
+
+  .calendar {
+    top: 286px;
+    left: -22px;
+    height: 70px;
+  }
+
+  .logo-container {
+    margin-bottom: 95px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    box-shadow: 0 6px 17px rgb(0 0 0 / 10%), 0 12px 8px rgb(0 0 0 / 10%);
+  }
+
+  .software-wrapper {
+    flex-direction: column;
+  }
+
+  .software-wrapper .container {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .software-wrapper .container h1 {
+    font-size: 26px;
+    margin: 15px auto;
+  }
+
+  .software-img img {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .dot-wrapper + .dot-wrapper::before {
+    left: 18%;
+  }
+
+  .hub-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+  }
+
+  .hub-left #woman {
+    position: relative;
+    right: 22%;
+    bottom: 10%;
+  }
+  
+  .hub-wrapper .hub-left #dots {
+    position: relative;
+    left: 8%;
+    bottom: 10%;
+  }
+
+  .hub-left {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .hub-content {
+    text-align: center;
+  }
+
+  .hub-content br {
+    display: none;
+  }
+
+  .hub-content img {
+    height: 35px;
+  }
+
+  .hub-content p {
+    font-size: 20px;
+  }
+
+  .hub-content h4 {
+    font-size: 17px;
+  }
+
+  .hub-content h6 {
+    font-size: 13px;
+    color: gray;
+  }
+
+  .trusted {
+    margin: 50px auto;
+  }
+
+  .trusted h3 {
+    font-size: 21px;
+  }
+
+  .trusted-companies {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .trusted-companies img {
+    height: 30px;
+  }
+
+  .pricing {
+    margin: 100px auto 0;
+  }
+
+  .pricing h2 {
+    font-size: 25px;
+  }
+
+  .pricing-table {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 35px;
+  }
+
+  .main-price {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+
+  .main-price p {
+    font-size: 18px;
+  }
+
+  .main-price p:last-child {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .components,
+  .images,
+  .cancel,
+  .money {
+    margin: 0 15px;
+  }
+  .components h2,
+  .images h2,
+  .cancel h2,
+  .money h2 {
+    font-size: 18px;
+  }
+
+  .cancel h2 {
+    margin-bottom: 2px;
+  }
+
+  .pricing-table img {
+    max-width: 50px;
+  }
+
+  .main-header {
+    justify-content: center;
+  }
+
+  .main-price p br {
+    display: none;
+  }
+
+  .main-price p {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .hire-us-wrapper {
+    flex-direction: column;
+  }
+
+  .hire-us-wrapper .left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .left-side .quote {
+    margin-right: 172px;
+  }
+
+  .left-wrapper .left-side h2 {
+    font-size: 27px;
+  }
+  .left-wrapper .left-side .quote {
+    font-size: 17px;
+  }
+
+  .left-wrapper .right-side h4 {
+    font-size: 18px;
+  }
+  .left-wrapper .right-side .slack {
+    font-size: 14px;
+  }
+
+  .hire-us .right {
+    max-width: none;
+  }
+
+  .form-inputs input,
+  select {
+    width: 100%;
+    padding: 5px;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  #checkbox {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .checkbox-line p {
+    font-size: 15px;
+    color: gray;
+  }
+
+  .form-link {
+    justify-content: flex-start;
+  }
+
+  .form-link a {
+    margin-left: 35px;
+  }
+
+  .hire-us .get-started-btn {
+    margin-left: 40%;
+    margin-top: 30px;
+  }
+
+  .references {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-info {
+    grid-row: 1 / span 2;
+  }
+
+  .footer-left a {
+    font-size: 15px;
+  }
+
+  #social {
+    margin-left: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Phones */

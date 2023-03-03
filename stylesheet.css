@@ -31,6 +31,7 @@ body {
 
 .bg-container {
   height: 700px;
+  width: 100%;
   background: linear-gradient(
     106deg,
     rgb(248, 248, 248) 35%,
@@ -553,6 +554,7 @@ p {
 .cancel-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: -12px;
 }
 
 .hire-us {
@@ -919,7 +921,6 @@ footer p {
   .benefits-container,
   .software-wrapper,
   .why-front,
-  .video-banner,
   .hubspot,
   .trusted,
   .pricing,
@@ -988,7 +989,7 @@ footer p {
   .logo-container {
     margin-bottom: 95px;
   }
-  
+
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -999,7 +1000,6 @@ footer p {
 
   .benefits-grid .card h3 {
     font-size: 17px;
-  
   }
   .benefits-grid .card a {
     font-size: 14px;
@@ -1016,7 +1016,7 @@ footer p {
     display: none;
   }
 
-  .premium-header  {
+  .premium-header {
     margin-bottom: -12px;
   }
 
@@ -1108,34 +1108,34 @@ footer p {
     margin-left: 25px;
     margin-right: 25px;
   }
-  
+
   .trusted-companies img {
     height: 30px;
   }
-  
+
   .pricing {
     margin: 100px auto 0;
   }
-  
+
   .pricing h2 {
     font-size: 26px;
     margin-bottom: 0;
   }
-  
+
   .pricing p {
     font-size: 17px;
     margin-top: 1;
   }
-  
+
   .pricing-table {
     grid-template-columns: repeat(2, 1fr);
     margin: 50px 35px;
   }
-  
+
   .pricing-table br {
     display: none;
   }
-  
+
   .pricing-table img {
     max-width: 50px;
   }
@@ -1169,10 +1169,6 @@ footer p {
 
   .cancel-wrapper h2 {
     margin-bottom: 14px;
-  }
-
-  .cancel-wrapper {
-    margin-bottom: -12px;
   }
 
   .main-header {
@@ -1311,13 +1307,271 @@ footer p {
   #social {
     margin-left: 20px;
   }
-  
+
   .footer-bottom p {
     font-size: 15px;
     line-height: 1.5;
   }
-
-  
 }
 
 /* Mobile Phones */
+
+@media screen and (max-width: 480px) {
+  body br {
+    display: none;
+  }
+
+  .bg-container {
+    background: linear-gradient(
+      98deg,
+      rgb(248, 248, 248) 35%,
+      rgb(247, 249, 250) 72.5%,
+      rgba(219, 232, 242, 1) 64.5%
+    );
+    clip-path: polygon(0 93%, 0 0, 100% 0, 100% 73%);
+  }
+
+  .navbar-brand {
+    width: 50%;
+  }
+
+  .navbar-toggler span {
+    font-size: 30px;
+  }
+
+  .navbar-toggler {
+    right: 54px;
+  }
+
+  .container h1 {
+    font-size: 35px;
+  }
+
+  .container p {
+    font-size: 20px;
+    margin: 25px 35px;
+  }
+
+  .play-btn {
+    font-size: 17px;
+    padding: 19px 33px;
+  }
+
+  .empower-wrapper .container a {
+    font-size: 16px;
+  }
+
+  .google-logo {
+    top: 38px;
+    left: -20px;
+    height: 75px;
+  }
+
+  .atlassian {
+    top: 63px;
+    left: 64px;
+    height: 101px;
+  }
+
+  .asana {
+    top: 63px;
+    left: 130px;
+    height: 101px;
+  }
+
+  .pay-pal {
+    top: 197px;
+    left: -313px;
+    height: 101px;
+  }
+
+  .google-a {
+    top: 193px;
+    left: 51px;
+    height: 75px;
+  }
+
+  .weave {
+    top: 85px;
+    left: 22%;
+    height: 101px;
+  }
+
+  .calendar {
+    top: 238px;
+    left: 63px;
+    height: 99px;
+  }
+
+  .benefits {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .benefits h2 {
+    font-size: 37px;
+    margin-bottom: 0;
+  }
+
+  .benefits p {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: none;
+    margin: 0;
+  }
+
+  .benefits-grid .card img {
+    width: 55px;
+  }
+
+  .benefits-grid .card h3 {
+    font-size: 20px;
+  }
+
+  .benefits-grid .card p {
+    font-size: 18px;
+  }
+
+  .benefits-grid .card a {
+    font-size: 16px;
+  }
+
+  .sketch-btn {
+    font-size: 14px;
+    height: 26px;
+    width: 64px;
+    padding: 4px 10px;
+  }
+
+  .software-wrapper .container h1 {
+    font-size: 35px;
+    margin: auto 30px 30px 25px;
+  }
+
+  .why-front .hero-header h1 {
+    font-size: 37px;
+    margin-bottom: 0;
+  }
+
+  .why-front .hero-header p {
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 15px 25px 25px 0;
+  }
+
+  .dot-wrapper + .dot-wrapper::before {
+    display: none;
+  }
+
+  .dot-main-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 4;
+  }
+
+  .dot-wrapper {
+    flex-direction: row;
+    margin-left: 20px;
+  }
+
+  .why-front .dot {
+    width: 60px;
+    height: 60px;
+  }
+
+  .dot-text {
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .hub-left {
+    margin-left: 10px;
+    margin-top: 120px;
+  }
+
+  .hub-left #woman {
+    max-height: 355px;
+  }
+
+  .hub-left #dots {
+    max-height: 335px;
+  }
+
+  .hub-content img {
+    height: 40px;
+  }
+
+  .hub-content p {
+    font-size: 27px;
+    margin: 15px 0;
+  }
+
+  .hub-content h4 {
+    font-size: 21px;
+  }
+
+  .hub-content h6 {
+    font-size: 17px;
+  }
+
+  .trusted h3 {
+    font-size: 25px;
+  }
+
+  .trusted-companies {
+    flex-direction: column;
+  }
+
+  .trusted-companies img {
+    height: 37px;
+    margin-bottom: 25px;
+  }
+
+  .pricing-table {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+  }
+
+  .pricing-table #price-card {
+    margin: 0;
+  }
+
+  #price-card img {
+    max-width: 55px;
+  }
+
+  #price-card h2 {
+    font-size: 20px;
+  }
+
+  #price-card p {
+    font-size: 18px;
+    padding-right: 25px;
+  }
+
+  section.pricing > h2 {
+    font-size: 33px;
+  }
+
+  .pricing p {
+    font-size: 20px;
+  }
+
+  .main-header h1 {
+    font-size: 65px;
+    font-weight: 100;
+  }
+
+  .main-header h5 {
+    margin-bottom: 60px;
+  }
+
+  .main-price {
+    padding: 10px 43px;
+  }
+}

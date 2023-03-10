@@ -1726,7 +1726,26 @@ input, select {
 }
 
 .footer-left {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.footer-left a {
+  font-size: 17px;
+}
+
+.facebook,
+.google,
+.twitter,
+.github {
+  height: 37px;
+  width: 37px;
+}
+
+#social i {
+  margin: 2px 0px 0px 2px;
+  padding: 0;
+  font-size: 18px;
 }
 
 .footer-right {
@@ -1737,9 +1756,20 @@ input, select {
 
 .footer-right select {
   grid-column: 1 / span 4;
+  margin-top: 13px;
+  max-width: 207px;
+  font-weight: 100;
+  text-align: center;
 }
 
+.footer-bottom {
+  font-weight: bold;
+  margin: 50px;
+}
 
+.footer-bottom p {
+  font-size: 17px;
+}
 
 
 

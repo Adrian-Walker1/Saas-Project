@@ -1574,4 +1574,175 @@ footer p {
   .main-price {
     padding: 10px 43px;
   }
+
+  .left-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-wrapper .left-side h2 {
+    font-size: 30px;
+  }
+
+  .left-wrapper .left-side p {
+    font-size: 20px;
+  }
+
+  .left-wrapper .left-side hr {
+    margin: 30px 0;
+  }
+
+  .left-wrapper .left-side .quote {
+    font-size: 20px;
+  }
+
+  .left-side .quote {
+    margin: 0;
+  }
+
+
+  .right-side {
+    margin: 0 ;
+  }
+
+  .left-wrapper .right-side h4 {
+    font-size: 23px;
+}
+
+.left-wrapper .right-side .slack {
+  font-size: 17px;
+}
+
+.head-pics {
+  margin: 25px 10px 50px 30px;
+}
+
+.left img {
+  height: 43px;
+  margin-right: 25px;
+}
+
+.head-pics .large-img {
+  height: 60px;
+}
+
+.hire-us .right > :first-child {
+  font-size: 18px;
+}
+
+.right {
+  margin: 0;
+}
+  
+.form-inputs {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  flex-direction: column;
+}
+  
+input, select {
+  height: 42px;
+}
+
+#checkbox {
+  width: 43px;
+}
+
+.checkbox-line p {
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+.form-link a {
+  color: gray;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.form-link > :nth-child(2) {
+  color: white;
+}
+
+.hire-us .get-started-btn {
+  margin-left: 35%;
+  font-size: 12px;
+}
+
+.reference-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-info img {
+  max-width: 110px;
+}
+
+.phone span {
+  margin-top: 8px;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.address span {
+  margin-top: 9px;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.reference-wrapper a {
+  font-size: 18px;
+}
+
+#ref-card h4 {
+  font-size: 23px;
+}
+
+#ref-card a {
+  font-size: 19px;
+}
+
+.contact-info {
+  align-items: center;
+}
+
+.career {
+  display: inline;
+}
+
+.help, .account {
+  display: inline;
+}
+
+.career button {
+  margin-left: 5px;
+  font-size: 9.5px;
+}
+
+.footer-nav {
+  flex-direction: column;
+}
+
+.footer-left {
+  margin-bottom: 30px;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-right select {
+  grid-column: 1 / span 4;
+}
+
+
+
+
+
+
+
 }

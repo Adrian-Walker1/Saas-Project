@@ -855,9 +855,6 @@ footer {
   color: rgb(235, 242, 243);
 }
 
-.footer-right #social.country {
-}
-
 footer p {
   text-align: center;
   margin-top: 0;
@@ -1331,7 +1328,7 @@ footer p {
 
 /* Mobile Phones */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   body br {
     display: none;
   }
@@ -1355,6 +1352,10 @@ footer p {
     font-weight: 100;
   }
 
+  .nav-bar .nav-container {
+    margin-left: auto;
+  }
+
   .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -1366,29 +1367,30 @@ footer p {
   }
 
   .navbar-brand {
-    width: 50%;
+    width: 60%;
   }
 
   .navbar-toggler span {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .navbar-toggler {
-    right: 54px;
+    right: 25px;
+    top: 18px;
   }
 
   .container h1 {
-    font-size: 35px;
+    font-size: 29px;
   }
 
   .container p {
     font-size: 20px;
-    margin: 25px 35px;
+    margin: 25px 0px;
   }
 
   .play-btn {
-    font-size: 17px;
-    padding: 19px 33px;
+    font-size: 14px;
+    padding: 18px 27px;
   }
 
   .empower-wrapper .container a {
@@ -1396,45 +1398,45 @@ footer p {
   }
 
   .google-logo {
-    top: 38px;
-    left: -20px;
-    height: 75px;
+    top: 58px;
+    left: -14px;
+    height: 62px;
   }
 
   .atlassian {
-    top: 63px;
-    left: 64px;
-    height: 101px;
+    top: 71px;
+    left: 44px;
+    height: 81px;
   }
 
   .asana {
-    top: 63px;
-    left: 130px;
-    height: 101px;
+    top: 71px;
+    left: 100px;
+    height: 81px;
   }
 
   .pay-pal {
-    top: 197px;
-    left: -313px;
-    height: 101px;
+    top: 192px;
+    left: -250px;
+    height: 81px;
   }
 
   .google-a {
     top: 193px;
     left: 51px;
-    height: 75px;
+    height: 62px;
   }
 
   .weave {
-    top: 85px;
+    top: 103px;
     left: 22%;
-    height: 101px;
+    height: 81px;
   }
 
   .calendar {
-    top: 238px;
-    left: 63px;
-    height: 99px;
+    top: 216px;
+    left: 48px;
+    height: 81px;
   }
 
   .benefits {
@@ -1443,12 +1445,12 @@ footer p {
   }
 
   .benefits h2 {
-    font-size: 37px;
+    font-size: 33px;
     margin-bottom: 0;
   }
 
   .benefits p {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 15px;
   }
 
@@ -1458,19 +1460,19 @@ footer p {
   }
 
   .benefits-grid .card img {
-    width: 55px;
+    width: 50px;
   }
 
   .benefits-grid .card h3 {
-    font-size: 20px;
-  }
-
-  .benefits-grid .card p {
     font-size: 18px;
   }
 
+  .benefits-grid .card p {
+    font-size: 15px;
+  }
+
   .benefits-grid .card a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .sketch-btn {
@@ -1480,20 +1482,23 @@ footer p {
     padding: 4px 10px;
   }
 
+  .software-wrapper {
+    margin-top: auto;
+  }
+
   .software-wrapper .container h1 {
-    font-size: 35px;
-    margin: auto 30px 30px 25px;
+    font-size: 29px;
   }
 
   .why-front .hero-header h1 {
-    font-size: 37px;
+    font-size: 30px;
     margin-bottom: 0;
   }
 
   .why-front .hero-header p {
-    font-size: 21px;
+    font-size: 17px;
     line-height: 1.5;
-    margin: 15px 25px 25px 0;
+    margin: 15px 10px;
   }
 
   .dot-wrapper + .dot-wrapper::before {
@@ -1503,7 +1508,7 @@ footer p {
   .dot-main-wrapper {
     flex-direction: column;
     align-items: flex-start;
-    line-height: 4;
+    line-height: 4.5;
   }
 
   .dot-wrapper {
@@ -1512,14 +1517,24 @@ footer p {
   }
 
   .why-front .dot {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .dot-text {
-    margin-left: 60px;
+    margin-left: 25px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .banner-button {
+    height: 60px;
+    width: 60px;
+  }
+
+  .banner-button span {
+    font-size: 35px;
+    margin: 14px;
   }
 
   .hub-left {
@@ -1528,11 +1543,11 @@ footer p {
   }
 
   .hub-left #woman {
-    max-height: 355px;
+    max-height: 325px;
   }
 
   .hub-left #dots {
-    max-height: 335px;
+    max-height: 300px;
   }
 
   .hub-content img {
@@ -1540,7 +1555,7 @@ footer p {
   }
 
   .hub-content p {
-    font-size: 27px;
+    font-size: 22px;
     margin: 15px 0;
   }
 
@@ -1549,11 +1564,11 @@ footer p {
   }
 
   .hub-content h6 {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .trusted h3 {
-    font-size: 25px;
+    font-size: 21px;
   }
 
   .trusted-companies {
@@ -1565,10 +1580,15 @@ footer p {
     margin-bottom: 25px;
   }
 
+  .pricing {
+    margin-top: 60px;
+  }
+
   .pricing-table {
     display: flex;
     flex-direction: column;
     margin: auto 10px;
+    grid-gap: 30px;
   }
 
   .pricing-table #price-card {
@@ -1576,29 +1596,32 @@ footer p {
   }
 
   #price-card img {
-    max-width: 55px;
+    max-width: 50px;
   }
 
   #price-card h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #price-card p {
-    font-size: 18px;
-    padding-right: 25px;
+    font-size: 15px;
   }
 
   section.pricing > h2 {
-    font-size: 33px;
+    font-size: 30px;
   }
 
   .pricing p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .main-header h1 {
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 100;
+  }
+
+  .main-price hr {
+    margin-top: 0;
   }
 
   .main-header h5 {
@@ -1619,15 +1642,16 @@ footer p {
   }
 
   .left-wrapper .left-side p {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 0 -35px;
   }
 
   .left-wrapper .left-side hr {
-    margin: 30px 0;
+    margin: 30px -35px;
   }
 
   .left-wrapper .left-side .quote {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .left-side .quote {
@@ -1680,11 +1704,11 @@ footer p {
   }
 
   #checkbox {
-    width: 43px;
+    width: 47px;
   }
 
   .checkbox-line p {
-    font-size: 17px;
+    font-size: 16px;
     padding-left: 10px;
     padding-right: 3px;
   }
@@ -1692,7 +1716,7 @@ footer p {
   .form-link a {
     color: gray;
     font-size: 14px;
-    margin-left: 40px;
+    margin-left: 35px;
   }
 
   .form-link > :nth-child(2) {
@@ -1727,15 +1751,15 @@ footer p {
   }
 
   .reference-wrapper a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #ref-card h4 {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   #ref-card a {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .contact-info {
@@ -1766,7 +1790,7 @@ footer p {
   }
 
   .footer-left a {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .facebook,
@@ -1803,6 +1827,6 @@ footer p {
   }
 
   .footer-bottom p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }

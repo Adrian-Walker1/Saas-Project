@@ -1370,16 +1370,16 @@ footer p {
   }
 
   .navbar-brand {
-    width: 60%;
+    width: 55%;
   }
 
   .navbar-toggler span {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .navbar-toggler {
     right: 25px;
-    top: 18px;
+    top: 27px;
   }
 
   .container h1 {
